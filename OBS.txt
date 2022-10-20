@@ -1,0 +1,4 @@
+#   Curso Api com Cache Docker
+[https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
+
+parei na aula 01 -> clonando o projeto e configurando
