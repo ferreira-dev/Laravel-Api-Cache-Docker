@@ -1,0 +1,30 @@
+#   Curso Api com Cache Docker
+[https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
+
+parei na [apis-da-ead: aula_04] 
+                        -> Api de Listar um curso por Id
+
+# Módulo: Configurações de SETUP
+
+        - aula_01
+        - aula_02
+        - aula_03
+        - aula_04
+        - aula_05
+                . compose require laravel/telescope
+                . php artisan telescope:install
+                . acessar /telescope
+
+        - aula_06
+                . app/Providers/RouteServiceProvider -> desativar WEB e remover prefix API pra trabalhar somente com o arquivo API.php
+                . routes/api.php -> remover tudo e deixar só use .../Route
+
+# Módulo: APIS da EAD
+
+        - aula_01
+        - aula_02
+                . introdução de como trabalhar com Repositories e Services.
+                . ciclo:   ->request->rota->controller->service->repository->controller->client
+        - aula_03
+                . conceitos de observer com eloquent, criação das apis etc.
+        - aula_04
