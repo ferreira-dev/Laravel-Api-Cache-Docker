@@ -27,4 +27,11 @@ class CourseRepository
     {
         return $this->entity->create($data);
     }
+
+    public function deleteCourseByUuid($identify)
+    {
+        $course = $this->getCourseByUuid($identify);
+
+        return $course->delete();
+    }
 }
