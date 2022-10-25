@@ -1,8 +1,8 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [apis-da-ead: aula_05] 
-                                -> Api de Deletar um curso por Id
+parei na [apis-da-ead: aula_07] 
+                                -> CRIAR MODEL E MIGRATION DE MÓDULOS NO LARAVEL
 
 # Módulo: Configurações de SETUP
 
