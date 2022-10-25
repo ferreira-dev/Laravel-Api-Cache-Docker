@@ -17,6 +17,5 @@ Route::delete('/courses/{identify}', [CourseController::class, 'destroy']);
 Route::get('/courses', [CourseController::class, 'index']);
 Route::post('/courses', [CourseController::class, 'store']);
 
+Route::apiResource('/modules/{module}/lessons', LessonController::class);
 Route::apiResource('/courses/{course}/modules', ModuleController::class);
-//api respource facilita o acesso aos métodos do verbo http?
-//talvez mas é necessário apontar o método
