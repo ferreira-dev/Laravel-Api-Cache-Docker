@@ -3,11 +3,13 @@
 namespace App\Providers;
 
 use App\Models\Course;
+use App\Models\Module;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 use App\Observers\CourseObserver;
+use App\Observers\ModuleObserver;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -30,5 +32,6 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Course::observe(CourseObserver::class);
+        Module::observe(ModuleObserver::class);
     }
 }

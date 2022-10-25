@@ -19,7 +19,7 @@ parei na [apis-da-ead: aula_09]
 
         - aula_02
                 . introdução de como trabalhar com Repositories e Services.
-                . ciclo:   ->request->rota->controller->service->repository->controller->client
+                . ciclo:   client->request->rota->controller->service->repository->controller->client
         - aula_03
                 . conceitos de observer com eloquent, criação das apis etc.
                 . aula top 
