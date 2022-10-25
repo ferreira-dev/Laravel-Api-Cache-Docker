@@ -1,8 +1,8 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [apis-da-ead: aula_07] 
-                                -> CRIAR MODEL E MIGRATION DE MÓDULOS NO LARAVEL
+parei na [apis-da-ead: aula_09] 
+                                -> MÓDULOS DA API DE EAD DO LARAVEL
 
 # Módulo: Configurações de SETUP
 
@@ -22,3 +22,4 @@ parei na [apis-da-ead: aula_07]
                 . ciclo:   ->request->rota->controller->service->repository->controller->client
         - aula_03
                 . conceitos de observer com eloquent, criação das apis etc.
+                . aula top 
