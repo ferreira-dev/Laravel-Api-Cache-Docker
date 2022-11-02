@@ -1,8 +1,8 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [apis-da-ead: aula_09] 
-                                -> MÓDULOS DA API DE EAD DO LARAVEL
+parei na [03_cache: aula_02] 
+                                -> EAGER LOADS NO LARAVEL
 
 # Módulo: Configurações de SETUP
 
