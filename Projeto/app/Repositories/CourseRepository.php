@@ -16,25 +16,28 @@ class CourseRepository
 
     public function getCourseByUuid($identify, bool $loadRelationships = true)
     {
-        return $this->entity
-                    ->where('uuid', $identify)
-                    ->with([$loadRelationships ? 'modules.lessons' : ''])
-                    ->firstOrFail();
+        $course = $this->entity->where('uuid', $identify);
+
+        if($loadRelationships) {
+            $course->with('modules.lessons');
+        }
+
+        return $course->firstOrFail();
     }
 
     public function getAllCourses()
     {
-       return Cache::remember('courses', 60, function(){
-            return $this->entity
-            ->with('modules.lessons')
-            ->get();
-        });
-
-    //    return Cache::rememberForever('courses', function(){
+    //    return Cache::remember('courses', 60, function(){
     //         return $this->entity
     //         ->with('modules.lessons')
     //         ->get();
     //     });
+
+       return Cache::rememberForever('courses', function(){
+            return $this->entity
+            ->with('modules.lessons')
+            ->get();
+        });
     }
 
     public function createNewCourse(array $data)
@@ -46,12 +49,16 @@ class CourseRepository
     {
         $course = $this->getCourseByUuid($identify, false);
 
+        Cache::forget('courses');
+
         return $course->delete();
     }
 
     public function updateCourseByUuid(string $identify, array $data)
     {
         $course = $this->getCourseByUuid($identify, false);
+
+        Cache::forget('courses');
 
         return $course->update($data);
     }

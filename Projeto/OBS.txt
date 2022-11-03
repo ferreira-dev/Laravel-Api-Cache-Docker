@@ -1,8 +1,8 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [03_cache: aula_03] 
-                                -> TRABALHANDO COM CACHE EM APIS LARAVEL
+parei na [03_cache: aula_04] 
+                                -> ESTRATÉGIAS DE CACHE NO LARAVEL
 
 # Módulo: Configurações de SETUP
 
