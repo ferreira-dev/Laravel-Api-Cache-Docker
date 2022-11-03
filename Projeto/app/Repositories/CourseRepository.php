@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Course;
+use Illuminate\Support\Facades\Cache;
 
 class CourseRepository
 {
@@ -23,11 +24,17 @@ class CourseRepository
 
     public function getAllCourses()
     {
-        return $this->entity
-                    ->with('modules.lessons')
-                    ->get();
+       return Cache::remember('courses', 60, function(){
+            return $this->entity
+            ->with('modules.lessons')
+            ->get();
+        });
 
-                    //with('author.contacts')->get();
+    //    return Cache::rememberForever('courses', function(){
+    //         return $this->entity
+    //         ->with('modules.lessons')
+    //         ->get();
+    //     });
     }
 
     public function createNewCourse(array $data)
