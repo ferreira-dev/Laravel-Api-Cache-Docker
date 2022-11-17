@@ -1,8 +1,8 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [03_cache: aula_04] 
-                                -> ESTRATÉGIAS DE CACHE NO LARAVEL
+parei na [04_tests_na_API: aula_01] 
+                                -> Configurar PHPUnit e criar Factories no Laravel
 
 # Módulo: Configurações de SETUP
 
