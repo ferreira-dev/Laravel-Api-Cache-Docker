@@ -26,16 +26,16 @@ Repositório do Projeto Prático do curso da especializaTi. Nele foram abordados
 `
 composer install
 `
-`
 
+`
 cp .env.example .env
 `
-`
 
+`
 php artisan key:generate
 `
-`
 
+`
 php artisan migrate
 `
 
