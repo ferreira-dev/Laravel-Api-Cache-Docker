@@ -1,9 +1,10 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [04_tests_na_API: aula_01] 
-                                -> Configurar PHPUnit e criar Factories no Laravel
+parei na [04_tests_na_API: aula_02] 
+                                -> Criar testes da Api de cursos
 
+## algumas anotações:
 # Módulo: Configurações de SETUP
 
         - aula_05
@@ -12,7 +13,8 @@ parei na [04_tests_na_API: aula_01]
                 . acessar /telescope
 
         - aula_06
-                . app/Providers/RouteServiceProvider -> desativar WEB e remover prefix API pra trabalhar somente com o arquivo API.php
+                . app/Providers/RouteServiceProvider -> desativar WEB e remover prefix API pra trabalhar
+                        somente com o arquivo API.php
                 . routes/api.php -> remover tudo e deixar só use .../Route
 
 # Módulo: APIS da EAD
