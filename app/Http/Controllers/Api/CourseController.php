@@ -24,6 +24,7 @@ class CourseController extends Controller
      */
     public function index()
     {
+        
         $courses = $this->courseService->getCourses();
         return CourseResource::collection($courses);
     }
