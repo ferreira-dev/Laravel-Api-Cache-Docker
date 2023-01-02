@@ -1,8 +1,7 @@
 #   Curso Api com Cache Docker
 [https://academy.especializati.com.br/aula/instalar-laravel-em-ambiente-docker]
 
-parei na [04_tests_na_API: aula_02] 
-                                -> Criar testes da Api de cursos
+[finalizado]
 
 ## algumas anotações:
 # Módulo: Configurações de SETUP
